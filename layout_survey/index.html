@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Layout type survey" />
+    <meta name="author" content="Alexander" />
+    <link href="resources/styles.css" rel="stylesheet" type="text/css" />
+    <title>Survey - First Page</title>
+</head>
+<body>
+    <div class="header_container">
+        <header>
+            <div class="title_wrapper">
+                <h1>Notifications Survey</h1>
+                <img class="number_img" src="assets/step-1.png" alt="Title Picture"> 
+            </div>
+        </header>
+    </div>
+    
+    <div class="page_content_container">
+        <main>
+            <div class="content_wrapper">
+                <p>We're working on our notification system to make our product work better.</p>
+                <p>The survey consists in several questions and usually takes 5-7 minutes to complete.</p>
+
+                <form class="notifications_survey_01" action="#">
+                    <fieldset>
+                        <legend>The survey consists in several questions and usually takes 5-7 minutes to complete.</legend>
+
+                        <div class="email_input">
+                            <label for="email_01">Enter your email:</label>
+                            <input type="email" id="email_01" name="email_01" placeholder="Your answer" maxLength="50" />
+                        </div>
+
+                        <div class="form_question">Are you an admin or a member on our Board?</div>
+
+                        <div class="first_question first_alternative">
+                            <input type="radio" id="alternative_one_admin">
+                            <label for="alternative_one_admin">Admin</label>
+                        </div>
+
+                        <div class="first_question second_alternative">
+                            <input type="radio" id="alternative_two_member">
+                            <label for="alternative_two_member">Member</label>
+                        </div>
+
+                        <div class="form_question">How do you collaborate in our Board?</div>
+
+                        <div class="second_question first_alternative">
+                            <input type="radio" id="alternative_one_creator">
+                            <label for="alternative_one_creator">Create and edit content</label>
+                        </div>
+
+                        <div class="second_question second_alternative">
+                            <input type="radio" id="alternative_two_comentator">
+                            <label for="alternative_two_comentator">Comment and leave comment</label>
+                        </div>
+
+                        <div class="second_question third_alternative">
+                            <input type="radio" id="alternative_three_reviewer">
+                            <label for="alternative_three_reviewer">Just review created comment</label>
+                        </div>
+
+                        <div class="second_question fourth_alternative">
+                            <input type="radio" id="alternative_four_other">
+                            <label for="alternative_four_other">Other:</label>
+                            <input class="border_style" type="text" id="alternative_four_other" maxlength="250">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="btn">
+                <a href="page2.html">Next</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
